@@ -2,9 +2,9 @@ import 'package:ecr_protocol/ecr_protocol.dart';
 import 'package:ecr_protocol/src/ecr/utils.dart';
 
 class SetData {
-  final Easylink sdk;
+  final Future<List<int>> Function(List<int> payload) onSetData;
 
-  SetData(this.sdk);
+  SetData(this.onSetData);
 
   // region Configuration
 
@@ -76,8 +76,5 @@ class SetData {
 
   Future<List<int>> _setTransaction(TransactionConfig config, List<int> data) => _set(config.value, data);
   Future<List<int>> _setConfiguration(Param param, List<int> data) => _set(param.value, data);
-  Future<List<int>> _set(List<int> param, List<int> data) {
-    final req = payloadForGetSet(param, data);
-    return sdk.setData(req);
-  }
+  Future<List<int>> _set(List<int> param, List<int> data) => onSetData(payloadForGetSet(param, data));
 }
