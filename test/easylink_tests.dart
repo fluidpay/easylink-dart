@@ -1,4 +1,4 @@
-import 'package:ecr_protocol/ecr_protocol.dart';
+import 'package:easylink/easylink_sdk.dart';
 import 'package:test/test.dart';
 
 import 'mock/connection_mock.dart';

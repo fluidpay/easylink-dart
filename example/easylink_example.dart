@@ -1,9 +1,9 @@
-import 'package:ecr_protocol/ecr_protocol.dart';
+import 'package:easylink/easylink_sdk.dart';
 
 class ExampleDeviceConnection extends Connection {
   @override
   Stream<List<int>> receive() {
-    return Stream.periodic(Duration(seconds: 1));
+    return Stream.value([]);
   }
 
   @override

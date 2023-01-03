@@ -1,4 +1,4 @@
-import 'package:ecr_protocol/src/common/misc.dart';
+import 'package:easylink/src/common/misc.dart';
 
 class TransactionData {
   final int amount;

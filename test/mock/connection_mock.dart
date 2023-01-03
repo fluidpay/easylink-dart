@@ -1,4 +1,4 @@
-import 'package:ecr_protocol/src/ecr/ecr.dart';
+import 'package:easylink/src/ecr/ecr.dart';
 
 class ConnectionMock extends Connection {
   final List<List<int>> receiveData;
