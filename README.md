@@ -5,7 +5,7 @@ The package implements a high-level communication layer for Easylink capable dev
 To use the package you can import it from the git repository.
 
 ```yml
-  easylink-dart:
+  easylink:
     git:
       url: git@github.com:fluidpay/easylink-dart.git
       ref: v0.1.0
