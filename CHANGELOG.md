@@ -1,3 +1,4 @@
-## 1.0.0
+## 0.1.0
 
-- Initial version.
+- Establishment of the communication with the Easylink device.
+- Transaction processing.
