@@ -44,10 +44,6 @@ class Easylink {
     return getTransactionResponse(onlyTrack2Data: onlyTrack2Data);
   }
 
-  Future completeTransaction() {
-    return ecr.send(data: Command.transactionComplete.data);
-  }
-
   Future<List<int>> setData(List<int> req) =>
       ecr.send(data: [...Command.setData.value, DataType.configuration.value, ...req]);
 

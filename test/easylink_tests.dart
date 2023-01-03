@@ -1,5 +1,4 @@
 import 'package:ecr_protocol/ecr_protocol.dart';
-import 'package:ecr_protocol/src/easylink/command.dart';
 import 'package:test/test.dart';
 
 import 'mock/connection_mock.dart';
@@ -9,7 +8,6 @@ void main() {
   test('disconnect', _testDisconnecting);
   test('processTransaction', _testProcessTransaction);
   test('processTransactionOnlyTrack2Data', _testProcessTransactionOnlyTrack2Data);
-  test('completeTransaction', _testCompleteTransaction);
   test('setData', _testSetData);
   test('getConfigurationData', _testGetConfigurationData);
   test('getTransactionData', _testGetTransactionData);
@@ -193,16 +191,6 @@ void _testProcessTransactionOnlyTrack2Data() async {
   await easylink.processTransaction(transactionData, onlyTrack2Data: true);
 
   expect(connection.sentDataWithoutSyncFrames.length, 3);
-}
-
-void _testCompleteTransaction() {
-  final connection = ConnectionMock([]);
-  final easylink = Easylink(connection);
-
-  easylink.completeTransaction();
-
-  expect(connection.sentData.length, 1);
-  expect(connection.sentData.first, [2, 1, 3, 232, 0, 1, 0, 2, 128, 49, 90, 3]);
 }
 
 void _testSetData() {
