@@ -84,7 +84,7 @@ Creating a new instance will return the sdk functionalities what you can use.
 ```dart
 import 'package:ecr_protocol/ecr_protocol.dart';
 
-void main() async {
+void main() {
   final sdk = Easylink(connection);
 }
 ```
