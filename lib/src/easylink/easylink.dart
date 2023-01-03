@@ -1,6 +1,6 @@
-import 'package:ecr_protocol/ecr_protocol.dart';
-import 'package:ecr_protocol/src/easylink/command.dart';
-import 'package:ecr_protocol/src/easylink/get_data.dart';
+import 'package:easylink/easylink_sdk.dart';
+import 'package:easylink/src/easylink/command.dart';
+import 'package:easylink/src/easylink/get_data.dart';
 
 class Easylink {
   final ECR _ecr;

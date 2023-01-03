@@ -1,4 +1,4 @@
-library ecr_protocol;
+library easylink;
 
 export 'src/common/misc.dart';
 export 'src/easylink/params.dart';

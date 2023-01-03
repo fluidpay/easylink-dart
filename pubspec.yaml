@@ -1,5 +1,4 @@
-name: ecr_protocol
-description: A starting point for Dart libraries or applications.
+name: easylink
 version: 1.0.0
 
 environment:

@@ -1,5 +1,5 @@
-import 'package:ecr_protocol/ecr_protocol.dart';
-import 'package:ecr_protocol/src/ecr/model/exceptions.dart';
+import 'package:easylink/easylink_sdk.dart';
+import 'package:easylink/src/ecr/model/exceptions.dart';
 
 List<List<int>> buildFrames(int packNo, List<int> data, int packSize, int frameSize) {
   final frames = <List<int>>[];

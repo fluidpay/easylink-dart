@@ -1,6 +1,6 @@
-import 'package:ecr_protocol/ecr_protocol.dart';
-import 'package:ecr_protocol/src/ecr/model/exceptions.dart';
-import 'package:ecr_protocol/src/ecr/utils.dart';
+import 'package:easylink/easylink_sdk.dart';
+import 'package:easylink/src/ecr/model/exceptions.dart';
+import 'package:easylink/src/ecr/utils.dart';
 import 'package:test/test.dart';
 
 void main() {

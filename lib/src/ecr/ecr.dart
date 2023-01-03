@@ -1,11 +1,11 @@
 import 'dart:async';
 import 'dart:convert';
 
-import 'package:ecr_protocol/src/ecr/model/exceptions.dart';
-import 'package:ecr_protocol/src/ecr/model/frame.dart';
-import 'package:ecr_protocol/src/common/misc.dart';
-import 'package:ecr_protocol/src/ecr/model/report.dart';
-import 'package:ecr_protocol/src/ecr/utils.dart';
+import 'package:easylink/src/ecr/model/exceptions.dart';
+import 'package:easylink/src/ecr/model/frame.dart';
+import 'package:easylink/src/common/misc.dart';
+import 'package:easylink/src/ecr/model/report.dart';
+import 'package:easylink/src/ecr/utils.dart';
 
 typedef ReportCallback = Function(Report);
 

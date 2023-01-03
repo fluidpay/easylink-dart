@@ -1,6 +1,6 @@
-import 'package:ecr_protocol/ecr_protocol.dart';
+import 'package:easylink/easylink_sdk.dart';
 
-import 'package:ecr_protocol/src/common/misc.dart' as misc;
+import 'package:easylink/src/common/misc.dart' as misc;
 import 'exceptions.dart' as exceptions;
 
 class Frame {

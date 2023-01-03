@@ -1,5 +1,5 @@
-import 'package:ecr_protocol/ecr_protocol.dart';
-import 'package:ecr_protocol/src/ecr/utils.dart';
+import 'package:easylink/easylink_sdk.dart';
+import 'package:easylink/src/ecr/utils.dart';
 
 class GetData {
   final Future<List<int>> Function(DataType dataType, List<int> config) onGetData;

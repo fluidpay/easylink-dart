@@ -5,7 +5,7 @@ The package implements a high-level communication layer for Easylink capable dev
 To use the package you can import it from the git repository.
 
 ```yml
-  ecr_protocol:
+  easylink-dart:
     git:
       url: git@github.com:fluidpay/easylink-dart.git
       ref: v0.1.0
@@ -32,7 +32,7 @@ abstract class Connection {
 The following snippet is an example implementation of the abstract class by using [simpleblue](https://pub.dev/packages/simpleblue) library.
 
 ```dart
-import 'package:ecr_protocol/ecr_protocol.dart';
+import 'package:easylink/easylink_sdk.dart';
 import 'package:simpleblue/model/bluetooth_device.dart';
 import 'package:simpleblue/simpleblue.dart';
 
@@ -82,7 +82,7 @@ The connection will be necessary for the Easylink instance initialization.
 Creating a new instance will return the sdk functionalities what you can use.
 
 ```dart
-import 'package:ecr_protocol/ecr_protocol.dart';
+import 'package:easylink/easylink_sdk.dart';
 
 void main() {
   final sdk = Easylink(connection);
