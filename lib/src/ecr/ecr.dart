@@ -159,7 +159,7 @@ class ECR {
 
       if (actualError.isNotEmpty) {
         final errorText = String.fromCharCodes(actualError);
-        if (!errorText.contains('Err:0,')) {
+        if (!(errorText.contains('Err:0,') || errorText.contains('Err:-2407,'))) {
           throw DeviceException(errorText);
         }
       }
